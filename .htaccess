@@ -1,4 +1,6 @@
-AuthType Basic
-AuthName "Snazzy Paws Staff Only"
-AuthUserFile /home/snazzypaws/.htpasswd
-Require valid-user
+<Files "roster.html">
+  AuthType Basic
+  AuthName "Snazzy Paws Staff Only"
+  AuthUserFile /home/snazzypaws/.htpasswd
+  Require valid-user
+</Files>
