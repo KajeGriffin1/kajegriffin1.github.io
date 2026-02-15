@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Snazzy Paws Grooming | Privacy Policy</title>
+
+    <!--meta tags-->
+    <meta
+      name="description"
+      content="Snazzy Paws Grooming in Hamilton offers professional dog grooming services including bathing, haircuts and spa packages."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--W3.CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+    <body>
+    <header class="site-header w3-container w3-padding-16 w3-display-container">
+      <!--logo-->
+      <div class="w3-display-left w3-padding">
+        <img src="images/logo.png" alt="Snazzy Paws Grooming logo" width="70" />
+      </div>
+
+      <!--heading-->
+      <div class="w3-center">
+        <h1 style="margin: 0; padding: 0 64px">Snazzy Paws Grooming</h1>
+      </div>
+
+      <!--hamburger menu-->
+      <div class="w3-display-right">
+        <button
+          onclick="toggleMenu()"
+          class="w3-button w3-xlarge w3-hide-large"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!--navigation bar-->
+      <div class="w3-center w3-hide-small w3-hide-medium w3-padding-16">
+        <nav class="nav-links">
+          <a href="index.html" class="w3-button">Home</a>
+          <a href="services.html" class="w3-button">Services</a>
+          <a href="gallery.html" class="w3-button">Gallery</a>
+          <a href="booking.html" class="w3-button">Booking</a>
+          <a href="contact.html" class="w3-button">Contact</a>
+        </nav>
+      </div>
+
+      <!--navigation small screen-->
+      <div id="mobileNav" class="w3-bar-block w3-hide w3-center w3-hide-large">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </header>
+
+    <!--page content-->
+    <main>
+      <section>
+        <h2>Privacy Policy</h2>
+        <p> We collect personal information from you, including information about your:
+            name, contact information, interactions with us, and billing or purchase information.
+        <p> We collect your personal information in order to: provide dog grooming services, including booking, billing, and animal care. </p>
+        <p> Besides our staff, we share this information with: your veterinarian, if requested in order to ensure your dogs medical requirements are being met.</p>
+            Providing some information is optional. If you choose not to enter contact or billing information, we'll be unable to provide grooming services..
+            We keep your information safe by storing it in encrypted files and ensuring authorised access only .
+
+            We keep your information for one year, after their last grooming appointment, at which point we securely destroy it by securely erasing all digital data..
+            You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at snazzypaws.biz.nz.
+        </p>
+        <p>
+          If you have any questions regarding this statement or the way we collect and use your information, please contact us via the
+          <a href="contact.html">contact form</a>.
+        </p>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <p>Opening Hours: Monday–Friday 8am–5pm | Saturday 9am–4pm</p>
+        <p>&copy; Snazzy Paws Grooming, Hamilton, New Zealand</p>
+        <p>
+          Got questions? Reach us via our
+          <a href="contact.html" class="footer-links">contact page</a>.
+        </p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="roster.html">Staff Roster</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--navigation script small screen-->
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("mobileNav");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
