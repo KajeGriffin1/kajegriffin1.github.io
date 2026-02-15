@@ -3,36 +3,65 @@
   <head>
     <meta charset="utf-8"/>
     <title>Snazzy Paws Grooming | Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    
+    <!--meta tags-->
+    <meta
+      name="description"
+      content="Snazzy Paws Grooming in Hamilton offers professional dog grooming services including bathing, haircuts and spa packages."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--W3.CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header class="site-header">
-      <div class="logo">
-        <img src="images/logo.png" alt="Snazzy Paws Grooming logo"/>
+    <header class="site-header w3-container w3-padding-16 w3-display-container">
+      <!--logo-->
+      <div class="w3-display-left w3-padding">
+        <img src="images/logo.png" alt="Snazzy Paws Grooming logo" width="70" />
       </div>
 
-      <h1>Snazzy Paws Grooming</h1>
+      <!--heading-->
+      <div class="w3-center">
+        <h1 style="margin: 0; padding: 0 64px">Snazzy Paws Grooming</h1>
+      </div>
 
-      <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation"/>
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+      <!--hamburger menu-->
+      <div class="w3-display-right">
+        <button
+          onclick="toggleMenu()"
+          class="w3-button w3-xlarge w3-hide-large"
+        >
+          ☰
+        </button>
+      </div>
 
-      <nav aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="booking.html">Booking</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <!--navigation bar-->
+      <div class="w3-center w3-hide-small w3-hide-medium w3-padding-16">
+        <nav class="nav-links">
+          <a href="index.html" class="w3-button">Home</a>
+          <a href="services.html" class="w3-button">Services</a>
+          <a href="gallery.html" class="w3-button">Gallery</a>
+          <a href="booking.html" class="w3-button">Booking</a>
+          <a href="contact.html" class="w3-button">Contact</a>
+        </nav>
+      </div>
+
+      <!--navigation small screen-->
+      <div id="mobileNav" class="w3-bar-block w3-hide w3-center w3-hide-large">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
     </header>
 
+    <!--page content-->
     <main>
       <section>
         <h2>Contact Us</h2>
@@ -42,6 +71,7 @@
           us at our Hamilton location.
         </p>
 
+        <!--map-->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093746!2d175.27925331531706!3d-37.78700197975671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d1a3f1f1f1f1f%3A0x1234567890abcdef!2sHamilton%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v0000000000000"
           title="Map showing Snazzy Paws Grooming location"
@@ -50,6 +80,7 @@
         >
         </iframe>
 
+        <!--contact form-->
         <form>
           <label for="name">Name</label>
           <input id="name" name="name" type="text"/>
@@ -68,15 +99,35 @@
       </section>
     </main>
 
+    <!--footer-->
     <footer>
-      <p>Opening Hours: Monday–Friday 8am–5pm | Saturday 9am–4pm</p>
-      <p>&copy; Snazzy Paws Grooming, Hamilton, New Zealand</p>
-      <p>
-        Got questions? Reach us via our
-        <a href="contact.html" class="footer-links">contact page</a>.
-      </p>
+      <div class="container">
+        <p>Opening Hours: Monday–Friday 8am–5pm | Saturday 9am–4pm</p>
+        <p>&copy; Snazzy Paws Grooming, Hamilton, New Zealand</p>
+        <p>
+          Got questions? Reach us via our
+          <a href="contact.html" class="footer-links">contact page</a>.
+        </p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="roster.html">Staff Roster</a>
+        </p>
+      </div>
     </footer>
+
+    <!--navigation script small screen-->
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("mobileNav");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>   
   </body>
 </html>
+
 
 
